@@ -1618,7 +1618,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (!tokenId || !priceInEth) {
         showToast("Invalid NFT selection. Redirecting to marketplace...", "error");
-        window.location.href = "marketplace.html";
+        //window.location.href = "marketplace.html";
         return;
     }
 
