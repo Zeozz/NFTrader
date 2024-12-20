@@ -1277,7 +1277,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 document.addEventListener("DOMContentLoaded", async () => {
     const tokenId = localStorage.getItem("selectedTokenId");
     if (!tokenId) {
-        alert("No NFT selected for transfer.");
+        //alert("No NFT selected for transfer.");
         //window.location.href = "gallery.html";
         return;
     }
@@ -1405,7 +1405,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 document.addEventListener("DOMContentLoaded", async () => {
     const tokenId = localStorage.getItem("selectedTokenId");
     if (!tokenId) {
-        alert("No NFT selected for selling.");
+        //alert("No NFT selected for selling.");
         //window.location.href = "gallery.html";
         return;
     }
