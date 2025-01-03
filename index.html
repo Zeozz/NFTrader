@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home - NFTrader</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Menu -->
     <nav class="nav-menu">
         <a href="index.html" class="active">Home</a>
         <a href="wallet.html">Wallet</a>
@@ -15,13 +16,90 @@
         <a href="marketplace.html">Marketplace</a>
     </nav>
     
-    <main class="container">
-        <h1>Welcome</h1>
-    </main>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1>Welcome to NFT Platform</h1>
+            <p>
+                Dive into the world of digital collectibles! Connect your wallet, create your unique NFTs, 
+                and showcase them in your gallery. Explore our vibrant marketplace to discover and trade amazing NFTs.
+            </p>
+            <br>
+            <button class="primary-button" onclick="navigateTo('wallet.html')">Get Started</button>
+        </section>
+        <br>
+        <!-- Highlights Section -->
+        <section class="highlights-section">
+            <h2>Features</h2>
+            <div class="nft-grid highlights-grid">
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <img src="wallet.png" alt="Wallet" />
+                    </div>
+                    <div class="nft-info">
+                        <h3>Connect Your Wallet</h3>
+                        <p>Securely link your wallet to start your NFT journey.</p>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <img src="mint.png" alt="Mint NFT" />
+                    </div>
+                    <div class="nft-info">
+                        <h3>Mint Your NFTs</h3>
+                        <p>Create and store unique digital assets effortlessly.</p>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <img src="gallery.png" alt="Gallery" />
+                    </div>
+                    <div class="nft-info">
+                        <h3>Showcase Your Gallery</h3>
+                        <p>Display your NFT collection in a personalized gallery.</p>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <img src="transfer.png" alt="Gallery" />
+                    </div>
+                    <div class="nft-info">
+                        <h3>Seamless Transfers</h3>
+                        <p>Transfer your NFTs from one wallet to another.</p>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <img src="sell.png" alt="Gallery" />
+                    </div>
+                    <div class="nft-info">
+                        <h3>Selling Made Easy</h3>
+                        <p>Sell your NFTs to earn Ethereum.</p>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <div class="nft-image">
+                        <img src="marketplace.png" alt="Marketplace" />
+                    </div>
+                    <div class="nft-info">
+                        <h3>Explore the Marketplace</h3>
+                        <p>Find incredible collectibles and collect them all.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Toast Notification -->
     <div id="toast" class="toast"></div>
 
+    <!-- Scripts -->
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/web3@1.9.0/dist/web3.min.js"></script>
     <script src="script.js"></script>
 </body>
